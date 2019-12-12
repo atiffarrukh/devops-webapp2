@@ -17,6 +17,7 @@ pipeline {
         sh '''whoami
 date
 echo $PATH
+echo "Atif"
 pwd
 ls -la
 ./gradlew build --info'''
