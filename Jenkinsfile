@@ -39,6 +39,24 @@ date'''
           }
         }
 
+        stage('P3') {
+          steps {
+            sh 'echo "parallel 3"'
+          }
+        }
+
+        stage('P4') {
+          steps {
+            sh 'echo "parallel 4"'
+          }
+        }
+
+        stage('P5') {
+          steps {
+            sh 'echo "parallel 5"'
+          }
+        }
+
       }
     }
 
