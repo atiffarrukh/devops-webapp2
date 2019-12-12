@@ -28,32 +28,73 @@ ls -la
 
         stage('parallel') {
           steps {
-            sh '''echo "run parallel"
-date'''
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 1"
+pwd
+ls -la
+./gradlew build --info'''
           }
         }
 
         stage('P2') {
           steps {
-            sh 'echo "parallel 2"'
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 2"
+pwd
+ls -la
+./gradlew build --info'''
           }
         }
 
         stage('P3') {
           steps {
-            sh 'echo "parallel 3"'
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 3"
+pwd
+ls -la
+./gradlew build --info'''
           }
         }
 
         stage('P4') {
           steps {
-            sh 'echo "parallel 4"'
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 4"
+pwd
+ls -la
+./gradlew build --info'''
           }
         }
 
         stage('P5') {
           steps {
-            sh 'echo "parallel 5"'
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 5"
+pwd
+ls -la
+./gradlew build --info'''
+          }
+        }
+
+        stage('P6') {
+          steps {
+            sh '''whoami
+date
+echo $PATH
+echo "Atif 6"
+pwd
+ls -la
+./gradlew build --info'''
           }
         }
 
