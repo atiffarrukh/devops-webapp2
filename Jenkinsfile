@@ -18,7 +18,7 @@ pipeline {
 date
 echo $PATH
 pwd
-la -la
+ls -la
 ./gradlew build --info'''
       }
     }
